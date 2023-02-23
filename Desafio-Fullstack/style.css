@@ -1,0 +1,160 @@
+/* Importação de fonte via Google Fonts --------- */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+/* Reset básico --------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body --------- */
+body {
+    background-color: #33475B;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* Header --------- */
+header {
+    height: 80px;
+    background-color: #FFFFFF;
+    display: flex;
+}
+.conteudo-principal{
+    width: 100%;
+}
+.container-elementos-header {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titulo-principal {
+    font-size: 24px;
+    color: #0000EE;
+    font-weight: 400;
+}
+
+.label-pesquisa {
+    background-color: #DB1E8C;
+    height: 40px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border-radius: 4px;
+}
+
+.input-pesquisa {
+    background-color: transparent;
+    padding: 4px;
+    border: none;
+}
+.input-pesquisa:active{
+    outline: none;
+    border: none;
+}
+
+::placeholder {
+    color: #FF97D3;
+}
+.subtitulo-maior{
+    display: block;
+    font-size: 36px;
+    line-height: 150px;
+    padding: 1rem;
+    margin: 1rem;
+    color: #FFFFFF;
+    margin-left: 200px;
+}
+.conteudo-principal-trilhas-caixa{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type:none;
+}
+.conteudo-principal-trilha{
+    width: 25%;
+    background-color: #F5F5F5;
+    border-radius: 4px;
+    padding: 1rem;
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.subtitulo-menor{
+    font-size: 24px;
+    color:#364372;
+}
+.subtext{
+    font-size: 16px;
+    line-height: 31px;
+    padding: auto;
+}
+.nav-ementa{
+    color: #264FEC;
+    border: 1px solid #264FEC;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 14px;
+    text-align: center;
+    width: 139px;
+    height: 50px;
+    margin-left: 8px;
+    bottom: 0px;
+}
+.nav-ementa:hover{
+    background-color: #264FEC;
+    transition: 0.7s;
+    color: white;
+}
+footer{
+    padding: 1rem;
+    align-items: center;
+    color: black;
+    
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-evenly;
+}
+.rodape-info{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+.rodape-info a{
+    color: black;
+    text-decoration: none;
+}
+.rodape-info-midia a{
+    color: black;
+    text-decoration: none;
+}
+@media(max-width:1280px){
+    
+    .conteudo-principal-trilha{
+        width: 40%;  
+    }
+}
+@media(max-width:728px) {
+    
+    .conteudo-principal-trilha{
+        width: 80%;  
+        
+    }
+    .rodape{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+
+}
